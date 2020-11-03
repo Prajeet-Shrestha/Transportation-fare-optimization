@@ -28,8 +28,16 @@ export class AppComponent implements AfterViewInit {
     let path = this._service.getCheapestFare(source, destination);
     if (path.travel_fare === Number.MAX_VALUE)
       console.log("No route possible");
-    else
+    else{
       console.log(path);
+      let path_name:string;
+      for(let i = 0; i<path.path.length;i++){
+        path_name = path.path[i].split("_");
+        this.route.push(path_name[0]);
+      }
+      // console.log(this.route);
+    }
+      
   }
 
   DropdownSelect(location: string, id: 'src' | 'loc') {
@@ -49,17 +57,31 @@ export class AppComponent implements AfterViewInit {
         name: location,
         position: locationcords[location]
       }
-      // this.route = [this.SelectedCurrentSource.name.toString(),this.SelectedCurrentDestination.name.toString()];
+      // this.route = [];
       this.start();
       this.drawCircle(this.SelectedCurrentDestination.position)
       // this.createaRoute();
       console.log(this.SelectedCurrentSource);
     }
   }
-
+  Clear(){
+    this.SelectedCurrentSource = null;
+    this.SelectedCurrentDestination = null;
+    this.route = [];
+    this.resetCanvas();
+    this.start();
+  }
+  Solve(){
+    this.resetCanvas();
+    this.start();
+    this.drawCircle(this.SelectedCurrentSource.position);
+    this.drawCircle(this.SelectedCurrentDestination.position);
+    this.calculateLowestFare(this.SelectedCurrentSource.name.toString(),this.SelectedCurrentDestination.name.toString());
+  }
 
   ngAfterViewInit() {
     this.start();
+  
   }
   co = []
   Canvas;
@@ -128,6 +150,8 @@ export class AppComponent implements AfterViewInit {
           console.log(locationcords[this1.route[r-1]][0],locationcords[this1.route[r-1]][1]);
           console.log(locationcords[this1.route[r]][0],locationcords[this1.route[r]][1]);
           this1.ctx.beginPath();
+          this1.ctx.fillStyle = "#16AA55";
+          this1.ctx.strokeStyle = "#FF0000"
           this1.ctx.moveTo(locationcords[this1.route[r-1]][0],locationcords[this1.route[r-1]][1]);
           this1.ctx.lineTo(locationcords[this1.route[r]][0],locationcords[this1.route[r]][1]);
           this1.ctx.stroke();

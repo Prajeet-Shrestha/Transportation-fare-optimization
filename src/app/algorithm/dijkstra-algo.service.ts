@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import route from "src/app/datasets/route.json";
 
+import fare from "src/app/datasets/travelFare.json";
+
 export interface DijkstraOutput {
   path: string[];
   travel_fare: number;
@@ -20,15 +22,15 @@ export class DijkstraAlgoService {
     let minFare: number = Number.MAX_VALUE;
     let results: DijkstraOutput[] = [];
 
-    results.push(this._findShortestPath(route, source + "_bus", destination + "_bus"));
-    results.push(this._findShortestPath(route, source + "_bus", destination + "_mini"));
-    results.push(this._findShortestPath(route, source + "_bus", destination + "_tempo"));
-    results.push(this._findShortestPath(route, source + "_mini", destination + "_bus"));
-    results.push(this._findShortestPath(route, source + "_mini", destination + "_mini"));
-    results.push(this._findShortestPath(route, source + "_mini", destination + "_tempo"));
-    results.push(this._findShortestPath(route, source + "_tempo", destination + "_bus"));
-    results.push(this._findShortestPath(route, source + "_tempo", destination + "_mini"));
-    results.push(this._findShortestPath(route, source + "_tempo", destination + "_tempo"));
+    results.push(this._findShortestPath(fare, source + "_bus", destination + "_bus"));
+    results.push(this._findShortestPath(fare, source + "_bus", destination + "_mini"));
+    results.push(this._findShortestPath(fare, source + "_bus", destination + "_tempo"));
+    results.push(this._findShortestPath(fare, source + "_mini", destination + "_bus"));
+    results.push(this._findShortestPath(fare, source + "_mini", destination + "_mini"));
+    results.push(this._findShortestPath(fare, source + "_mini", destination + "_tempo"));
+    results.push(this._findShortestPath(fare, source + "_tempo", destination + "_bus"));
+    results.push(this._findShortestPath(fare, source + "_tempo", destination + "_mini"));
+    results.push(this._findShortestPath(fare, source + "_tempo", destination + "_tempo"));
 
     for (let i=0; i<results.length; i++)
       if (shortest === null || results[i].travel_fare < minFare) {

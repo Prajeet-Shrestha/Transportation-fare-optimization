@@ -101,16 +101,26 @@
     "11_mini": {
         "8_tempo": 5,
         "8_mini": 5,
-        "8_bus": 5
+        "8_bus": 5,
+        "13_tempo": 5,
+        "13_mini": 5,
+        "13_bus": 5
+        
     },
     "11_bus": {
         "8_tempo": 10,
         "8_mini": 10,
-        "8_bus": 10
+        "8_bus": 10,
+        "13_tempo": 5,
+        "13_mini": 5,
+        "13_bus": 5
     },
     "11_tempo": {
         "8_tempo": 5,
         "8_mini": 5,
-        "8_bus": 5
+        "8_bus": 5,
+        "13_tempo": 5,
+        "13_mini": 5,
+        "13_bus": 5
     }
 }
