@@ -28,9 +28,9 @@ export class AppComponent implements AfterViewInit {
         name: location,
         position: locationcords[location]
       }
-
+      this.start(); 
       this.drawCircle(this.SelectedCurrentSource.position)
-      this.start();
+    
       console.log(this.SelectedCurrentSource);
     }
     else{
@@ -38,9 +38,10 @@ export class AppComponent implements AfterViewInit {
         name: location,
         position: locationcords[location]
       }
-
-      this.drawCircle(this.SelectedCurrentDestination.position)
+      // this.route = [this.SelectedCurrentSource.name.toString(),this.SelectedCurrentDestination.name.toString()];
       this.start();
+      this.drawCircle(this.SelectedCurrentDestination.position)
+      // this.createaRoute();
       console.log(this.SelectedCurrentSource);
     }
   }
@@ -52,6 +53,7 @@ export class AppComponent implements AfterViewInit {
   co = []
   Canvas;
   ctx;
+  route =[];
   start() {
     this.Canvas = <HTMLCanvasElement>document.getElementById("myCanvas");
     this.ctx = this.Canvas.getContext("2d");
@@ -104,10 +106,23 @@ export class AppComponent implements AfterViewInit {
       // ctx.stroke();
 
 
-      // ctx.beginPath();
-      // ctx.moveTo(301, 254);
-      // ctx.lineTo(369, 232);
-      // ctx.stroke();
+      // this1.ctx.beginPath();
+      // this1.ctx.moveTo(301, 254);
+      // this1.ctx.lineTo(369, 232);
+      // this1.ctx.stroke();
+      let length = this1.route.length;
+      if(length>0){
+        console.log(length);
+        for(let r =1;r<(length);r++){
+          console.log(locationcords[this1.route[r-1]][0],locationcords[this1.route[r-1]][1]);
+          console.log(locationcords[this1.route[r]][0],locationcords[this1.route[r]][1]);
+          this1.ctx.beginPath();
+          this1.ctx.moveTo(locationcords[this1.route[r-1]][0],locationcords[this1.route[r-1]][1]);
+          this1.ctx.lineTo(locationcords[this1.route[r]][0],locationcords[this1.route[r]][1]);
+          this1.ctx.stroke();
+        }
+      }
+    
     };
 
     image.src = 'assets/map.png';
@@ -128,6 +143,19 @@ export class AppComponent implements AfterViewInit {
     }
     catch (e) { }
 
+  }
+
+  createaRoute(route){
+    let length = route.length;
+    console.log(length);
+    for(let r =1;r<(length);r++){
+      console.log(locationcords[route[r-1]][0],locationcords[route[r-1]][1]);
+      console.log(locationcords[route[r]][0],locationcords[route[r]][1]);
+      this.ctx.beginPath();
+      this.ctx.moveTo(301,254);
+      this.ctx.lineTo(369, 232);
+      this.ctx.stroke();
+    }
   }
 
   shownode(event){
