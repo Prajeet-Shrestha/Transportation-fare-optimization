@@ -1,0 +1,59 @@
+<!-- <img id="myImgId" alt="" src="assets/map.png" />
+<input type="button" value="submit" onclick="start()">  -->
+<div style=" background: #dc143c;">
+<div class="nav"> 
+  <h1 style="margin-bottom: 1rem; padding-bottom: 0;">Optimize Your Travel Expenses</h1>
+  <div>
+    <mat-slide-toggle (change)="shownode($event)">Show All Nodes  </mat-slide-toggle>
+  </div>
+</div>
+<div style="height: 3vh; width: 100%;">
+
+</div>
+<div id="container">
+  <canvas id="myCanvas" width="1360" height="393"></canvas>
+</div>
+<div class="Conditions">
+  <div class="dropdownSource" style="width: fit-content;display: block;">
+    <div style="font-size: large; margin-bottom: 1rem;">
+       Your Current Location 
+    </div>
+    <mat-form-field appearance="fill">
+      <mat-label>Current Location</mat-label>
+      <mat-select>
+        <mat-option (click)="DropdownSelect(location,'src')" *ngFor="let location of locations" [value]="location">
+          {{location}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>    
+  </div>
+  <div class="dropdownDestination" style="width: fit-content;display: block;">
+    <div style="font-size: large; margin-bottom: 1rem;">
+      Your Desired Location
+    </div>
+    <mat-form-field appearance="fill">
+      <mat-label>Current Location</mat-label>
+      <mat-select>
+        <mat-option (click)="DropdownSelect(location,'loc')" *ngFor="let location of locations" [value]="location">
+          {{location}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>    
+  </div>
+
+  <div class="dropdownDestination" style="width: fit-content;display: block;">
+    <div style="font-size: large; margin-bottom: 1rem;">
+      Find Me the 
+    </div>
+    <mat-form-field appearance="fill">
+      <mat-label>Current Location</mat-label>
+      <mat-select>
+        <mat-option *ngFor="let feature of features" [value]="feature">
+          {{feature}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>    
+  </div>
+  
+</div>
+</div>
