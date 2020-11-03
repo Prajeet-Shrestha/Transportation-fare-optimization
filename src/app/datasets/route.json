@@ -1,0 +1,6 @@
+{
+    "dhulikhel_bus": {"suryabinayak_bus": 4, "suryabinayak_tempo": 7, "suryabinayak_mini": 1},
+    "dhulikhel_mini": {"suryabinayak_mini": 3, "sinamangal_mini": 10},
+    "dhulikhel_tempo": {"sinamangal_bus": 5},
+    "suryabinayak_mini": {"sinamangal_bus": 1}
+}

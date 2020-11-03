@@ -2,7 +2,6 @@ let graph_fare = {
     dhulikhel_bus: {suryabinayak_bus: 4, suryabinayak_tempo: 7},
     dhulikhel_mini: {suryabinayak_mini: 3, sinamangal_mini: 1},
     dhulikhel_tempo: {sinamangal_bus: 5},
-
 };
 
 let graph_route = {
