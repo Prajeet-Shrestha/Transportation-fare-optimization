@@ -1,11 +1,14 @@
 import { ArrayType } from '@angular/compiler';
 import { Component, AfterViewInit } from '@angular/core';
 import locationcords from "src/app/datasets/locationcords.json";
+import { DijkstraAlgoService } from "src/app/algorithm/dijkstra-algo.service";
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent implements AfterViewInit {
   title = 'Fare-Calculation';
   lat = 27.720416;
@@ -15,10 +18,18 @@ export class AppComponent implements AfterViewInit {
   locations = [];
   features = ["Cheapest Fare","Shortest Route"]
   state: "pre" | 'mid' | 'post' = 'pre';
-  constructor() {
+  constructor(private _service: DijkstraAlgoService) {
     for (let k in locationcords) {
       this.locations.push(k);
     }
+  }
+
+  calculateLowestFare(source, destination) {
+    let path = this._service.getCheapestFare(source, destination);
+    if (path.travel_fare === Number.MAX_VALUE)
+      console.log("No route possible");
+    else
+      console.log(path);
   }
 
   DropdownSelect(location: string, id: 'src' | 'loc') {
