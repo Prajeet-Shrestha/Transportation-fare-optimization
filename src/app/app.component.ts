@@ -18,6 +18,8 @@ export class AppComponent implements AfterViewInit {
   locations = [];
   features = ["Cheapest Fare","Shortest Route"]
   state: "pre" | 'mid' | 'post' = 'pre';
+  solve_button_status = "false";
+
   constructor(private _service: DijkstraAlgoService) {
     for (let k in locationcords) {
       this.locations.push(k);
@@ -70,6 +72,7 @@ export class AppComponent implements AfterViewInit {
     this.route = [];
     this.resetCanvas();
     this.start();
+    this.solve_button_status = "false";
   }
   Solve(){
     this.resetCanvas();
@@ -77,6 +80,7 @@ export class AppComponent implements AfterViewInit {
     this.drawCircle(this.SelectedCurrentSource.position);
     this.drawCircle(this.SelectedCurrentDestination.position);
     this.calculateLowestFare(this.SelectedCurrentSource.name.toString(),this.SelectedCurrentDestination.name.toString());
+    this.solve_button_status = "true";
   }
 
   ngAfterViewInit() {

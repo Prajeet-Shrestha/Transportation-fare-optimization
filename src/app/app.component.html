@@ -55,7 +55,7 @@
     </mat-form-field>    
   </div>
   <div class="dropdownDestination" style="width: fit-content;display: block; display: flex; justify-content: center; align-items: center;">
-    <button mat-flat-button color="warn" (click)="Solve()" >Solve it for me</button>
+    <button mat-flat-button color="warn" (click)="Solve()" [(disabled)]="solve_button_status">Solve it for me</button>
     <button mat-flat-button color="warn" (click)="Clear()" style="margin-left: 1rem;" >Clear Map</button>
   </div>
   
