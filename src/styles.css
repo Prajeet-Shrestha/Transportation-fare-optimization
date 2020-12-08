@@ -1,4 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; font-size: 62.5%;}
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; padding: 0%;}
+html,
+body {
+  height: 100%;
+  font-size: 62.5%;
+  width: fit-content !important;
+}
+body {
+  margin: 0;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+  padding: 0%;
+  width: fit-content !important;
+}
+
+.error.mat-snack-bar-container {
+  border-radius: 10px;
+  background: #d41616;
+  color: white;
+  z-index: 100000000000000;
+}
+
+.success.mat-snack-bar-container {
+  background: #11a511;
+  border-radius: 10px;
+  color: white;
+  z-index: 100000000000000;
+}

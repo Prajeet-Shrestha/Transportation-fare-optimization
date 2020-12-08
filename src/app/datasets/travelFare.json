@@ -1,126 +1,1601 @@
 {
-    "4_mini": {
-        "5_tempo": 10,
-        "5_mini": 10,
-        "5_bus": 10
-    },
-    "4_bus": {
-        "5_tempo": 10,
-        "5_mini": 10,
-        "5_bus": 10
-    },
-    "4_tempo": {
-        "5_tempo": 5,
-        "5_mini": 5,
-        "5_bus": 5
-    },
-    "5_mini": {
-        "6_tempo": 10,
-        "6_mini": 10,
-        "6_bus": 10,
-        "11_tempo": 10,
-        "11_mini": 10,
-        "11_bus": 10
-    },
-    "5_bus": {
-        "6_tempo": 10,
-        "6_mini": 10,
-        "6_bus": 10,
-        "11_tempo": 15,
-        "11_mini": 15,
-        "11_bus": 15
-    },
-    "5_tempo": {
-        "6_tempo": 5,
-        "6_mini": 5,
-        "6_bus": 5,
-        "11_tempo": 5,
-        "11_mini": 5,
-        "11_bus": 5
-    },
-    "6_mini": {
-        "8_tempo": 5,
-        "8_mini": 5,
-        "8_bus": 5
-    },
-    "6_bus": {
-        "8_tempo": 10,
-        "8_mini": 10,
-        "8_bus": 10
-    },
-    "6_tempo": {
-        "8_tempo": 5,
-        "8_mini": 5,
-        "8_bus": 5
-    },
-    "8_mini": {
-        "10_tempo": 5,
-        "10_mini": 5,
-        "10_bus": 5,
-        "13_tempo": 10,
-        "13_mini": 10,
-        "13_bus": 10,
-        "11_tempo": 10,
-        "11_mini": 10,
-        "11_bus": 10
-    },
-    "8_bus": {
-        "13_tempo": 10,
-        "13_mini": 10,
-        "13_bus": 10,
-        "11_tempo": 10,
-        "11_mini": 10,
-        "11_bus": 10
-    },
-    "8_tempo": {
-        "10_tempo": 5,
-        "10_mini": 5,
-        "10_bus": 5,
-        "13_tempo": 5,
-        "13_mini": 5,
-        "13_bus": 5,
-        "11_tempo": 5,
-        "11_mini": 5,
-        "11_bus": 5
-    },
-    "10_mini": {
-        "13_tempo": 5,
-        "13_mini": 5,
-        "13_bus": 5
-    },
-    "10_bus": {
-        "13_tempo": 10,
-        "13_mini": 10,
-        "13_bus": 10
-    },
-    "10_tempo": {
-        "13_tempo": 5,
-        "13_mini": 5,
-        "13_bus": 5
-    },
-    "11_mini": {
-        "8_tempo": 5,
-        "8_mini": 5,
-        "8_bus": 5,
-        "13_tempo": 5,
-        "13_mini": 5,
-        "13_bus": 5
-        
-    },
-    "11_bus": {
-        "8_tempo": 10,
-        "8_mini": 10,
-        "8_bus": 10,
-        "13_tempo": 5,
-        "13_mini": 5,
-        "13_bus": 5
-    },
-    "11_tempo": {
-        "8_tempo": 5,
-        "8_mini": 5,
-        "8_bus": 5,
-        "13_tempo": 5,
-        "13_mini": 5,
-        "13_bus": 5
-    }
+  "28_mini": {
+    "9_tempo": 15,
+    "9_mini": 15,
+    "9_bus": 5,
+    "31_tempo": 10,
+    "31_mini": 10,
+    "31_bus": 10
+  },
+  "28_bus": {
+    "9_tempo": 5,
+    "9_mini": 5,
+    "9_bus": 15,
+    "31_tempo": 15,
+    "31_mini": 15,
+    "31_bus": 15
+  },
+  "28_tempo": {
+    "9_tempo": 5,
+    "9_mini": 5,
+    "9_bus": 5,
+    "31_tempo": 10,
+    "31_mini": 10,
+    "31_bus": 10
+  },
+
+  "31_mini": {
+    "28_tempo": 5,
+    "28_mini": 10,
+    "28_bus": 5,
+    "32_tempo": 10,
+    "32_mini": 5,
+    "32_bus": 5,
+    "30_tempo": 10,
+    "30_mini": 5,
+    "30_bus": 5
+  },
+  "31_bus": {
+    "28_tempo": 10,
+    "28_mini": 15,
+    "28_bus": 15,
+    "32_tempo": 15,
+    "32_mini": 5,
+    "32_bus": 5,
+    "30_tempo": 5,
+    "30_mini": 15,
+    "30_bus": 5
+  },
+  "31_tempo": {
+    "28_tempo": 5,
+    "28_mini": 5,
+    "28_bus": 10,
+    "32_tempo": 5,
+    "32_mini": 10,
+    "32_bus": 5,
+    "30_tempo": 5,
+    "30_mini": 5,
+    "30_bus": 8
+  },
+  "30_mini": {
+    "29_tempo": 10,
+    "29_mini": 10,
+    "29_bus": 10,
+    "31_tempo": 5,
+    "31_mini": 15,
+    "31_bus": 5
+  },
+  "30_bus": {
+    "29_tempo": 5,
+    "29_mini": 5,
+    "29_bus": 5,
+    "31_tempo": 6,
+    "31_mini": 6,
+    "31_bus": 6
+  },
+  "30_tempo": {
+    "29_tempo": 5,
+    "29_mini": 5,
+    "29_bus": 5,
+    "31_tempo": 6,
+    "31_mini": 6,
+    "31_bus": 6
+  },
+  "29_mini": {
+    "27_tempo": 5,
+    "27_mini": 5,
+    "27_bus": 5,
+    "30_tempo": 4,
+    "30_mini": 4,
+    "30_bus": 4
+  },
+  "29_bus": {
+    "27_tempo": 5,
+    "27_mini": 5,
+    "27_bus": 5,
+    "30_tempo": 4,
+    "30_mini": 5,
+    "30_bus": 6
+  },
+  "29_tempo": {
+    "27_tempo": 5,
+    "27_mini": 5,
+    "27_bus": 5,
+    "30_tempo": 4,
+    "30_mini": 4,
+    "30_bus": 5
+  },
+  "23_mini": {
+    "20_tempo": 15,
+    "20_mini": 15,
+    "20_bus": 15,
+    "24_tempo": 5,
+    "24_mini": 5,
+    "24_bus": 5
+  },
+  "23_bus": {
+    "20_tempo": 15,
+    "20_mini": 15,
+    "20_bus": 15,
+    "24_tempo": 11,
+    "24_mini": 10,
+    "24_bus": 5
+  },
+  "23_tempo": {
+    "20_tempo": 10,
+    "20_mini": 10,
+    "20_bus": 10,
+    "24_tempo": 5,
+    "24_mini": 5,
+    "24_bus": 5
+  },
+  "24_mini": {
+    "23_tempo": 5,
+    "23_mini": 5,
+    "23_bus": 5,
+    "25_tempo": 8,
+    "25_mini": 8,
+    "25_bus": 8
+  },
+  "24_bus": {
+    "23_tempo": 5,
+    "23_mini": 5,
+    "23_bus": 5,
+    "25_tempo": 7,
+    "25_mini": 5,
+    "25_bus": 7
+  },
+  "24_tempo": {
+    "23_tempo": 5,
+    "23_mini": 5,
+    "23_bus": 5,
+    "25_tempo": 7,
+    "25_mini": 7,
+    "25_bus": 7
+  },
+  "25_mini": {
+    "24_tempo": 5,
+    "24_mini": 5,
+    "24_bus": 5,
+    "26_tempo": 5,
+    "26_mini": 5,
+    "26_bus": 5
+  },
+  "25_bus": {
+    "24_tempo": 5,
+    "24_mini": 5,
+    "24_bus": 5,
+    "26_tempo": 5,
+    "26_mini": 5,
+    "26_bus": 5
+  },
+  "25_tempo": {
+    "24_tempo": 5,
+    "24_mini": 5,
+    "24_bus": 5,
+    "26_tempo": 5,
+    "26_mini": 5,
+    "26_bus": 5
+  },
+  "26_mini": {
+    "34_tempo": 12,
+    "34_mini": 12,
+    "34_bus": 12,
+    "38_tempo": 13,
+    "38_mini": 13,
+    "38_bus": 13
+  },
+  "26_bus": {
+    "34_tempo": 15,
+    "34_mini": 15,
+    "34_bus": 15,
+    "38_tempo": 18,
+    "38_mini": 18,
+    "38_bus": 18
+  },
+  "26_tempo": {
+    "34_tempo": 15,
+    "34_mini": 15,
+    "34_bus": 15,
+    "38_tempo": 18,
+    "38_mini": 17,
+    "38_bus": 16
+  },
+  "39_mini": {
+    "41_tempo": 5,
+    "41_mini": 5,
+    "41_bus": 5,
+    "38_tempo": 5,
+    "38_mini": 5,
+    "38_bus": 5
+  },
+  "39_bus": {
+    "41_tempo": 5,
+    "41_mini": 5,
+    "41_bus": 5,
+    "38_tempo": 5,
+    "38_mini": 5,
+    "38_bus": 5
+  },
+  "39_tempo": {
+    "41_tempo": 5,
+    "41_mini": 5,
+    "41_bus": 5,
+    "38_tempo": 5,
+    "38_mini": 5,
+    "38_bus": 5
+  },
+  "41_mini": {
+    "42_tempo": 5,
+    "42_mini": 5,
+    "42_bus": 5,
+    "39_tempo": 5,
+    "39_mini": 5,
+    "39_bus": 5
+  },
+  "41_bus": {
+    "42_tempo": 5,
+    "42_mini": 5,
+    "42_bus": 5,
+    "39_tempo": 5,
+    "39_mini": 5,
+    "39_bus": 5
+  },
+  "41_tempo": {
+    "42_tempo": 5,
+    "42_mini": 5,
+    "42_bus": 5,
+    "39_tempo": 6,
+    "39_mini": 6,
+    "39_bus": 6
+  },
+  "43_mini": {
+    "44_tempo": 5,
+    "44_mini": 5,
+    "44_bus": 5,
+    "46_tempo": 8,
+    "46_mini": 8,
+    "46_bus": 8,
+    "35_tempo": 8,
+    "35_mini": 8,
+    "35_bus": 8
+  },
+  "43_bus": {
+    "44_tempo": 5,
+    "44_mini": 5,
+    "44_bus": 5,
+    "46_tempo": 8,
+    "46_mini": 8,
+    "46_bus": 8,
+    "35_tempo": 8,
+    "35_mini": 8,
+    "35_bus": 8
+  },
+  "43_tempo": {
+    "44_tempo": 5,
+    "44_mini": 5,
+    "44_bus": 5,
+    "46_tempo": 7,
+    "46_mini": 7,
+    "46_bus": 7,
+    "35_tempo": 8,
+    "35_mini": 8,
+    "35_bus": 8
+  },
+  "46_mini": {
+    "45_tempo": 5,
+    "45_mini": 5,
+    "45_bus": 5,
+    "47_tempo": 7,
+    "47_mini": 7,
+    "47_bus": 7
+  },
+  "46_bus": {
+    "45_tempo": 5,
+    "45_mini": 5,
+    "45_bus": 5,
+    "47_tempo": 7,
+    "47_mini": 7,
+    "47_bus": 7
+  },
+  "46_tempo": {
+    "45_tempo": 5,
+    "45_mini": 5,
+    "45_bus": 5,
+    "47_tempo": 6,
+    "47_mini": 6,
+    "47_bus": 6
+  },
+  "35_mini": {
+    "34_tempo": 5,
+    "34_mini": 5,
+    "34_bus": 5,
+    "36_tempo": 5,
+    "36_mini": 5,
+    "36_bus": 5,
+    "43_tempo": 5,
+    "43_mini": 5,
+    "43_bus": 5
+  },
+  "35_bus": {
+    "34_tempo": 5,
+    "34_mini": 5,
+    "34_bus": 5,
+    "36_tempo": 5,
+    "36_mini": 5,
+    "36_bus": 5,
+    "43_tempo": 5,
+    "43_mini": 5,
+    "43_bus": 5
+  },
+  "35_tempo": {
+    "34_tempo": 5,
+    "34_mini": 5,
+    "34_bus": 5,
+    "36_tempo": 5,
+    "36_mini": 5,
+    "36_bus": 5,
+    "43_tempo": 5,
+    "43_mini": 5,
+    "43_bus": 5
+  },
+  "32_mini": {
+    "31_tempo": 5,
+    "31_mini": 5,
+    "31_bus": 5,
+    "35_tempo": 9,
+    "35_mini": 9,
+    "35_bus": 9
+  },
+  "32_bus": {
+    "31_tempo": 5,
+    "31_mini": 5,
+    "31_bus": 5,
+    "35_tempo": 8,
+    "35_mini": 8,
+    "35_bus": 8
+  },
+  "32_tempo": {
+    "31_tempo": 5,
+    "31_mini": 5,
+    "31_bus": 5,
+    "35_tempo": 9,
+    "35_mini": 9,
+    "35_bus": 10
+  },
+  "34_mini": {
+    "26_tempo": 12,
+    "26_mini": 12,
+    "26_bus": 13,
+    "35_tempo": 5,
+    "35_mini": 6,
+    "35_bus": 5,
+    "33_tempo": 5,
+    "33_mini": 6,
+    "33_bus": 6
+  },
+  "34_bus": {
+    "26_tempo": 13,
+    "26_mini": 12,
+    "26_bus": 13,
+    "35_tempo": 5,
+    "35_mini": 6,
+    "35_bus": 5,
+    "33_tempo": 6,
+    "33_mini": 5,
+    "33_bus": 6
+  },
+  "34_tempo": {
+    "26_tempo": 15,
+    "26_mini": 10,
+    "26_bus": 15,
+    "35_tempo": 5,
+    "35_mini": 5,
+    "35_bus": 6,
+    "33_tempo": 5,
+    "33_mini": 6,
+    "33_bus": 5
+  },
+
+  "49_mini": {
+    "48_tempo": 5,
+    "48_mini": 6,
+    "48_bus": 7,
+    "50_tempo": 5,
+    "50_mini": 5,
+    "50_bus": 6
+  },
+  "49_bus": {
+    "48_tempo": 5,
+    "48_mini": 6,
+    "48_bus": 6,
+    "50_tempo": 5,
+    "50_mini": 6,
+    "50_bus": 5
+  },
+  "49_tempo": {
+    "48_tempo": 5,
+    "48_mini": 6,
+    "48_bus": 6,
+    "50_tempo": 5,
+    "50_mini": 6,
+    "50_bus": 6
+  },
+  "48_mini": {
+    "47_tempo": 5,
+    "47_mini": 6,
+    "47_bus": 6,
+    "49_tempo": 5,
+    "49_mini": 6,
+    "49_bus": 6
+  },
+  "48_bus": {
+    "47_tempo": 5,
+    "47_mini": 6,
+    "47_bus": 6,
+    "49_tempo": 5,
+    "49_mini": 5,
+    "49_bus": 6
+  },
+  "48_tempo": {
+    "47_tempo": 5,
+    "47_mini": 6,
+    "47_bus": 6,
+    "49_tempo": 6,
+    "49_mini": 5,
+    "49_bus": 5
+  },
+  "42_mini": {
+    "41_tempo": 6,
+    "41_mini": 5,
+    "41_bus": 6
+  },
+  "42_bus": {
+    "41_tempo": 5,
+    "41_mini": 6,
+    "41_bus": 6
+  },
+  "42_tempo": {
+    "41_tempo": 5,
+    "41_mini": 5,
+    "41_bus": 6
+  },
+  "33_mini": {
+    "34_tempo": 5,
+    "34_mini": 6,
+    "34_bus": 6
+  },
+  "33_bus": {
+    "34_tempo": 5,
+    "34_mini": 7,
+    "34_bus": 5
+  },
+  "33_tempo": {
+    "34_tempo": 5,
+    "34_mini": 5,
+    "34_bus": 6
+  },
+  "27_mini": {
+    "29_tempo": 7,
+    "29_mini": 7,
+    "29_bus": 8
+  },
+  "27_bus": {
+    "29_tempo": 7,
+    "29_mini": 7,
+    "29_bus": 9
+  },
+  "27_tempo": {
+    "29_tempo": 7,
+    "29_mini": 8,
+    "29_bus": 9
+  },
+  "45_mini": {
+    "46_tempo": 6,
+    "46_mini": 5,
+    "46_bus": 5
+  },
+  "45_bus": {
+    "46_tempo": 5,
+    "46_mini": 6,
+    "46_bus": 7
+  },
+  "45_tempo": {
+    "46_tempo": 5,
+    "46_mini": 6,
+    "46_bus": 7
+  },
+  "47_mini": {
+    "46_tempo": 5,
+    "46_mini": 5,
+    "46_bus": 7
+  },
+  "47_bus": {
+    "46_tempo": 5,
+    "46_mini": 5,
+    "46_bus": 6
+  },
+  "47_tempo": {
+    "46_tempo": 5,
+    "46_mini": 6,
+    "46_bus": 6
+  },
+  "22_mini": {
+    "27_tempo": 15,
+    "27_mini": 14,
+    "27_bus": 13,
+    "24_tempo": 9,
+    "24_mini": 8,
+    "24_bus": 7
+  },
+  "22_bus": {
+    "27_tempo": 15,
+    "27_mini": 16,
+    "27_bus": 17,
+    "24_tempo": 9,
+    "24_mini": 9,
+    "24_bus": 8
+  },
+  "22_tempo": {
+    "27_tempo": 15,
+    "27_mini": 15,
+    "27_bus": 14,
+    "24_tempo": 9,
+    "24_mini": 9,
+    "24_bus": 8
+  },
+  "38_mini": {
+    "39_tempo": 5,
+    "39_mini": 6,
+    "39_bus": 6
+  },
+  "38_bus": {
+    "39_tempo": 5,
+    "39_mini": 6,
+    "39_bus": 6
+  },
+  "38_tempo": {
+    "39_tempo": 5,
+    "39_mini": 6,
+    "39_bus": 7
+  },
+  "37_mini": {
+    "36_tempo": 5,
+    "36_mini": 6,
+    "36_bus": 6,
+    "38_tempo": 5,
+    "38_mini": 6,
+    "38_bus": 6
+  },
+  "37_bus": {
+    "36_tempo": 5,
+    "36_mini": 6,
+    "36_bus": 6,
+    "38_tempo": 6,
+    "38_mini": 6,
+    "38_bus": 5
+  },
+  "37_tempo": {
+    "36_tempo": 5,
+    "36_mini": 6,
+    "36_bus": 6,
+    "38_tempo": 6,
+    "38_mini": 6,
+    "38_bus": 5
+  },
+  "36_mini": {
+    "35_tempo": 5,
+    "35_mini": 6,
+    "35_bus": 6,
+    "37_tempo": 5,
+    "37_mini": 6,
+    "37_bus": 5
+  },
+  "36_bus": {
+    "35_tempo": 5,
+    "35_mini": 6,
+    "35_bus": 6,
+    "37_tempo": 6,
+    "37_mini": 6,
+    "37_bus": 5
+  },
+  "36_tempo": {
+    "35_tempo": 5,
+    "35_mini": 6,
+    "35_bus": 6,
+    "37_tempo": 6,
+    "37_mini": 5,
+    "37_bus": 6
+  },
+
+  "17_mini": {
+    "16_tempo": 8,
+    "16_mini": 8,
+    "16_bus": 8,
+    "2_tempo": 10,
+    "2_mini": 10,
+    "2_bus": 10,
+    "0_tempo": 15,
+    "0_mini": 15,
+    "0_bus": 15,
+    "1_tempo": 15,
+    "1_mini": 15,
+    "1_bus": 15
+  },
+  "17_bus": {
+    "16_tempo": 10,
+    "16_mini": 10,
+    "16_bus": 10,
+    "2_tempo": 15,
+    "2_mini": 15,
+    "2_bus": 15,
+    "0_tempo": 20,
+    "0_mini": 20,
+    "0_bus": 20,
+    "1_tempo": 20,
+    "1_mini": 20,
+    "1_bus": 20
+  },
+  "17_tempo": {
+    "16_tempo": 5,
+    "16_mini": 5,
+    "16_bus": 5,
+    "2_tempo": 10,
+    "2_mini": 10,
+    "2_bus": 10,
+    "0_tempo": 15,
+    "0_mini": 15,
+    "0_bus": 15,
+    "1_tempo": 15,
+    "1_mini": 15,
+    "1_bus": 15
+  },
+  "16_mini": {
+    "18_tempo": 8,
+    "18_mini": 8,
+    "18_bus": 8,
+    "17_tempo": 5,
+    "17_mini": 5,
+    "17_bus": 5
+  },
+  "16_bus": {
+    "18_tempo": 10,
+    "18_mini": 10,
+    "18_bus": 10,
+    "17_tempo": 5,
+    "17_mini": 5,
+    "17_bus": 5
+  },
+  "16_tempo": {
+    "18_tempo": 15,
+    "18_mini": 15,
+    "18_bus": 15,
+    "17_tempo": 5,
+    "17_mini": 5,
+    "17_bus": 5
+  },
+  "18_mini": {
+    "16_tempo": 8,
+    "16_mini": 8,
+    "16_bus": 8,
+    "19_tempo": 8,
+    "19_mini": 8,
+    "19_bus": 8,
+    "00_tempo": 10,
+    "00_mini": 10,
+    "00_bus": 10
+  },
+  "18_bus": {
+    "16_tempo": 15,
+    "16_mini": 15,
+    "16_bus": 15,
+    "19_tempo": 10,
+    "19_mini": 10,
+    "19_bus": 10,
+    "00_tempo": 15,
+    "00_mini": 15,
+    "00_bus": 15
+  },
+  "18_tempo": {
+    "16_tempo": 15,
+    "16_mini": 15,
+    "16_bus": 15,
+    "19_tempo": 5,
+    "19_mini": 5,
+    "19_bus": 5,
+    "00_tempo": 8,
+    "00_mini": 8,
+    "00_bus": 8
+  },
+  "19_mini": {
+    "18_tempo": 8,
+    "18_mini": 8,
+    "18_bus": 8
+  },
+  "19_bus": {
+    "18_tempo": 10,
+    "18_mini": 10,
+    "18_bus": 10
+  },
+  "19_tempo": {
+    "18_tempo": 5,
+    "18_mini": 5,
+    "18_bus": 5
+  },
+  "00_mini": {
+    "18_tempo": 10,
+    "18_mini": 10,
+    "18_bus": 10,
+    "0_tempo": 8,
+    "0_mini": 8,
+    "0_bus": 8
+  },
+  "00_bus": {
+    "18_tempo": 15,
+    "18_mini": 15,
+    "18_bus": 15,
+    "0_tempo": 10,
+    "0_mini": 10,
+    "0_bus": 10
+  },
+  "00_tempo": {
+    "18_tempo": 8,
+    "18_mini": 8,
+    "18_bus": 8,
+    "0_tempo": 5,
+    "0_mini": 5,
+    "0_bus": 5
+  },
+  "5_mini": {
+    "4_tempo": 5,
+    "4_mini": 5,
+    "4_bus": 5,
+    "11_tempo": 8,
+    "11_mini": 8,
+    "11_bus": 8,
+    "6_tempo": 8,
+    "6_mini": 8,
+    "6_bus": 8,
+    "7_tempo": 10,
+    "7_mini": 10,
+    "7_bus": 10
+  },
+  "5_bus": {
+    "4_tempo": 5,
+    "4_mini": 5,
+    "4_bus": 5,
+    "11_tempo": 10,
+    "11_mini": 10,
+    "11_bus": 10,
+    "6_tempo": 10,
+    "6_mini": 10,
+    "6_bus": 10,
+    "7_tempo": 12,
+    "7_mini": 12,
+    "7_bus": 12
+  },
+  "5_tempo": {
+    "4_tempo": 5,
+    "4_mini": 5,
+    "4_bus": 5,
+    "11_tempo": 15,
+    "11_mini": 15,
+    "11_bus": 15,
+    "6_tempo": 12,
+    "6_mini": 12,
+    "6_bus": 12,
+    "7_tempo": 15,
+    "7_mini": 15,
+    "7_bus": 15
+  },
+  "11_mini": {
+    "4_tempo": 8,
+    "4_mini": 8,
+    "4_bus": 8,
+    "5_tempo": 8,
+    "5_mini": 8,
+    "5_bus": 8,
+    "12_tempo": 8,
+    "12_mini": 8,
+    "12_bus": 8,
+    "13_tempo": 8,
+    "13_mini": 8,
+    "13_bus": 8,
+    "10_tempo": 5,
+    "10_mini": 5,
+    "10_bus": 5,
+    "20_tempo": 10,
+    "20_mini": 10,
+    "20_bus": 10,
+    "8_tempo": 5,
+    "8_mini": 5,
+    "8_bus": 5,
+    "23_tempo": 12,
+    "23_mini": 12,
+    "23_bus": 12
+  },
+  "11_bus": {
+    "4_tempo": 10,
+    "4_mini": 10,
+    "4_bus": 10,
+    "5_tempo": 10,
+    "5_mini": 10,
+    "5_bus": 10,
+    "12_tempo": 10,
+    "12_mini": 10,
+    "12_bus": 10,
+    "13_tempo": 10,
+    "13_mini": 10,
+    "13_bus": 10,
+    "10_tempo": 5,
+    "10_mini": 5,
+    "10_bus": 5,
+    "20_tempo": 12,
+    "20_mini": 12,
+    "20_bus": 12,
+    "8_tempo": 5,
+    "8_mini": 5,
+    "8_bus": 5,
+    "23_tempo": 15,
+    "23_mini": 15,
+    "23_bus": 15
+  },
+  "11_tempo": {
+    "4_tempo": 8,
+    "4_mini": 8,
+    "4_bus": 8,
+    "5_tempo": 8,
+    "5_mini": 8,
+    "5_bus": 8,
+    "12_tempo": 8,
+    "12_mini": 8,
+    "12_bus": 8,
+    "13_tempo": 8,
+    "13_mini": 8,
+    "13_bus": 8,
+    "10_tempo": 5,
+    "10_mini": 5,
+    "10_bus": 5,
+    "20_tempo": 15,
+    "20_mini": 15,
+    "20_bus": 15,
+    "8_tempo": 5,
+    "8_mini": 5,
+    "8_bus": 5,
+    "23_tempo": 25,
+    "23_mini": 25,
+    "23_bus": 25
+  },
+  "12_mini": {
+    "11_tempo": 8,
+    "11_mini": 8,
+    "11_bus": 8,
+    "14_tempo": 8,
+    "14_mini": 8,
+    "14_bus": 8,
+    "15_tempo": 10,
+    "15_mini": 10,
+    "15_bus": 10
+  },
+  "12_bus": {
+    "11_tempo": 10,
+    "11_mini": 10,
+    "11_bus": 10,
+    "14_tempo": 10,
+    "14_mini": 10,
+    "14_bus": 10,
+    "15_tempo": 12,
+    "15_mini": 12,
+    "15_bus": 12
+  },
+  "12_tempo": {
+    "11_tempo": 8,
+    "11_mini": 8,
+    "11_bus": 58,
+    "14_tempo": 5,
+    "14_mini": 5,
+    "14_bus": 5,
+    "15_tempo": 8,
+    "15_mini": 8,
+    "15_bus": 8
+  },
+  "13_mini": {
+    "14_tempo": 8,
+    "14_mini": 8,
+    "14_bus": 8,
+    "11_tempo": 8,
+    "11_mini": 8,
+    "11_bus": 8,
+    "15_tempo": 8,
+    "15_mini": 8,
+    "15_bus": 8,
+    "10_tempo": 12,
+    "10_mini": 12,
+    "10_bus": 12,
+    "20_tempo": 12,
+    "20_mini": 12,
+    "20_bus": 12
+  },
+  "13_bus": {
+    "14_tempo": 10,
+    "14_mini": 10,
+    "14_bus": 10,
+    "11_tempo": 10,
+    "11_mini": 10,
+    "11_bus": 10,
+    "15_tempo": 10,
+    "15_mini": 10,
+    "15_bus": 10,
+    "10_tempo": 15,
+    "10_mini": 15,
+    "10_bus": 15,
+    "20_tempo": 15,
+    "20_mini": 15,
+    "20_bus": 15
+  },
+  "13_tempo": {
+    "14_tempo": 5,
+    "14_mini": 5,
+    "14_bus": 5,
+    "11_tempo": 5,
+    "11_mini": 5,
+    "11_bus": 5,
+    "15_tempo": 8,
+    "15_mini": 8,
+    "15_bus": 8,
+    "10_tempo": 10,
+    "10_mini": 10,
+    "10_bus": 10,
+    "20_tempo": 10,
+    "20_mini": 10,
+    "20_bus": 10
+  },
+  "14_mini": {
+    "12_tempo": 8,
+    "12_mini": 8,
+    "12_bus": 8,
+    "13_tempo": 8,
+    "13_mini": 8,
+    "13_bus": 8,
+    "15_tempo": 5,
+    "15_mini": 5,
+    "15_bus": 5,
+    "20_tempo": 12,
+    "20_mini": 12,
+    "20_bus": 12,
+    "21_tempo": 12,
+    "21_mini": 12,
+    "21_bus": 12,
+    "10_tempo": 15,
+    "10_mini": 15,
+    "10_bus": 15
+  },
+  "14_bus": {
+    "12_tempo": 10,
+    "12_mini": 10,
+    "12_bus": 10,
+    "13_tempo": 10,
+    "13_mini": 10,
+    "13_bus": 10,
+    "15_tempo": 5,
+    "15_mini": 5,
+    "15_bus": 5,
+    "20_tempo": 12,
+    "20_mini": 12,
+    "20_bus": 12,
+    "21_tempo": 12,
+    "21_mini": 12,
+    "21_bus": 12,
+    "10_tempo": 15,
+    "10_mini": 15,
+    "10_bus": 15
+  },
+  "14_tempo": {
+    "12_tempo": 5,
+    "12_mini": 5,
+    "12_bus": 5,
+    "13_tempo": 5,
+    "13_mini": 5,
+    "13_bus": 5,
+    "15_tempo": 5,
+    "15_mini": 5,
+    "15_bus": 5,
+    "20_tempo": 8,
+    "20_mini": 8,
+    "20_bus": 8,
+    "21_tempo": 10,
+    "21_mini": 10,
+    "21_bus": 10,
+    "10_tempo": 20,
+    "10_mini": 20,
+    "10_bus": 20
+  },
+  "15_mini": {
+    "12_tempo": 8,
+    "12_mini": 8,
+    "12_bus": 8,
+    "13_tempo": 8,
+    "13_mini": 8,
+    "13_bus": 8,
+    "14_tempo": 5,
+    "14_mini": 5,
+    "14_bus": 5,
+    "20_tempo": 12,
+    "20_mini": 12,
+    "20_bus": 12,
+    "21_tempo": 12,
+    "21_mini": 12,
+    "21_bus": 12,
+    "10_tempo": 15,
+    "10_mini": 15,
+    "10_bus": 15
+  },
+  "15_bus": {
+    "12_tempo": 10,
+    "12_mini": 10,
+    "12_bus": 10,
+    "13_tempo": 10,
+    "13_mini": 10,
+    "13_bus": 10,
+    "15_tempo": 8,
+    "15_mini": 8,
+    "15_bus": 8,
+    "20_tempo": 10,
+    "20_mini": 10,
+    "20_bus": 10,
+    "21_tempo": 10,
+    "21_mini": 10,
+    "21_bus": 10,
+    "10_tempo": 15,
+    "10_mini": 15,
+    "10_bus": 15
+  },
+  "15_tempo": {
+    "12_tempo": 5,
+    "12_mini": 5,
+    "12_bus": 5,
+    "13_tempo": 5,
+    "13_mini": 5,
+    "13_bus": 5,
+    "15_tempo": 5,
+    "15_mini": 5,
+    "15_bus": 5,
+    "20_tempo": 8,
+    "20_mini": 8,
+    "20_bus": 8,
+    "21_tempo": 10,
+    "21_mini": 10,
+    "21_bus": 10,
+    "10_tempo": 15,
+    "10_mini": 15,
+    "10_bus": 15
+  },
+  "40_mini": {
+    "21_tempo": 8,
+    "21_mini": 8,
+    "21_bus": 8,
+    "14_tempo": 10,
+    "14_mini": 10,
+    "14_bus": 10,
+    "15_tempo": 10,
+    "15_mini": 10,
+    "15_bus": 10,
+    "13_tempo": 12,
+    "13_mini": 12,
+    "13_bus": 12
+  },
+  "40_bus": {
+    "21_tempo": 10,
+    "21_mini": 10,
+    "21_bus": 10,
+    "14_tempo": 15,
+    "14_mini": 15,
+    "14_bus": 15,
+    "15_tempo": 15,
+    "15_mini": 15,
+    "15_bus": 15,
+    "13_tempo": 15,
+    "13_mini": 15,
+    "13_bus": 15
+  },
+  "40_tempo": {
+    "21_tempo": 10,
+    "21_mini": 10,
+    "21_bus": 10,
+    "14_tempo": 12,
+    "14_mini": 12,
+    "14_bus": 12,
+    "15_tempo": 12,
+    "15_mini": 12,
+    "15_bus": 12,
+    "13_tempo": 15,
+    "13_mini": 15,
+    "13_bus": 15
+  },
+  "21_mini": {
+    "13_tempo": 10,
+    "13_mini": 10,
+    "13_bus": 10,
+    "14_tempo": 8,
+    "14_mini": 8,
+    "14_bus": 8,
+    "15_tempo": 8,
+    "15_mini": 8,
+    "15_bus": 8,
+    "20_tempo": 8,
+    "20_mini": 8,
+    "20_bus": 8,
+    "40_tempo": 8,
+    "40_mini": 8,
+    "40_bus": 8
+  },
+  "21_bus": {
+    "13_tempo": 15,
+    "13_mini": 15,
+    "13_bus": 15,
+    "14_tempo": 10,
+    "14_mini": 10,
+    "14_bus": 10,
+    "15_tempo": 10,
+    "15_mini": 10,
+    "15_bus": 10,
+    "20_tempo": 10,
+    "20_mini": 10,
+    "20_bus": 10,
+    "40_tempo": 10,
+    "40_mini": 10,
+    "40_bus": 10
+  },
+  "21_tempo": {
+    "13_tempo": 20,
+    "13_mini": 20,
+    "13_bus": 20,
+    "14_tempo": 15,
+    "14_mini": 15,
+    "14_bus": 15,
+    "15_tempo": 15,
+    "15_mini": 15,
+    "15_bus": 15,
+    "20_tempo": 8,
+    "20_mini": 8,
+    "20_bus": 8,
+    "40_tempo": 5,
+    "40_mini": 5,
+    "40_bus": 5
+  },
+  "20_mini": {
+    "10_tempo": 10,
+    "10_mini": 10,
+    "10_bus": 10,
+    "14_tempo": 8,
+    "14_mini": 8,
+    "14_bus": 8,
+    "15_tempo": 10,
+    "15_mini": 10,
+    "15_bus": 10,
+    "21_tempo": 8,
+    "21_mini": 8,
+    "21_bus": 8,
+    "23_tempo": 8,
+    "23_mini": 8,
+    "23_bus": 8
+  },
+  "20_bus": {
+    "10_tempo": 15,
+    "10_mini": 15,
+    "10_bus": 15,
+    "14_tempo": 10,
+    "14_mini": 10,
+    "14_bus": 10,
+    "15_tempo": 12,
+    "15_mini": 12,
+    "15_bus": 12,
+    "21_tempo": 10,
+    "21_mini": 10,
+    "21_bus": 10,
+    "23_tempo": 10,
+    "23_mini": 10,
+    "23_bus": 10
+  },
+  "20_tempo": {
+    "10_tempo": 18,
+    "10_mini": 18,
+    "10_bus": 18,
+    "14_tempo": 8,
+    "14_mini": 8,
+    "14_bus": 8,
+    "15_tempo": 10,
+    "15_mini": 10,
+    "15_bus": 10,
+    "21_tempo": 8,
+    "21_mini": 8,
+    "21_bus": 8,
+    "23_tempo": 8,
+    "23_mini": 8,
+    "23_bus": 8
+  },
+  "10_mini": {
+    "9_tempo": 5,
+    "9_mini": 5,
+    "9_bus": 5,
+    "8_tempo": 5,
+    "8_mini": 5,
+    "8_bus": 5,
+    "11_tempo": 8,
+    "11_mini": 8,
+    "11_bus": 8,
+    "13_tempo": 8,
+    "13_mini": 8,
+    "13_bus": 8,
+    "20_tempo": 10,
+    "20_mini": 10,
+    "20_bus": 10
+  },
+  "10_bus": {
+    "9_tempo": 10,
+    "9_mini": 10,
+    "9_bus": 10,
+    "8_tempo": 10,
+    "8_mini": 10,
+    "8_bus": 10,
+    "11_tempo": 12,
+    "11_mini": 12,
+    "11_bus": 12,
+    "13_tempo": 12,
+    "13_mini": 12,
+    "13_bus": 12,
+    "20_tempo": 15,
+    "20_mini": 15,
+    "20_bus": 15
+  },
+  "10_tempo": {
+    "9_tempo": 5,
+    "9_mini": 5,
+    "9_bus": 5,
+    "8_tempo": 5,
+    "8_mini": 5,
+    "8_bus": 5,
+    "11_tempo": 8,
+    "11_mini": 8,
+    "11_bus": 8,
+    "13_tempo": 10,
+    "13_mini": 10,
+    "13_bus": 10,
+    "20_tempo": 15,
+    "20_mini": 15,
+    "20_bus": 15
+  },
+  "8_mini": {
+    "6_tempo": 8,
+    "6_mini": 8,
+    "6_bus": 8,
+    "9_tempo": 8,
+    "9_mini": 8,
+    "9_bus": 8,
+    "10_tempo": 8,
+    "10_mini": 8,
+    "10_bus": 8,
+    "13_tempo": 10,
+    "13_mini": 10,
+    "13_bus": 10,
+    "11_tempo": 10,
+    "11_mini": 10,
+    "11_bus": 10
+  },
+  "8_bus": {
+    "6_tempo": 10,
+    "6_mini": 10,
+    "6_bus": 10,
+    "9_tempo": 10,
+    "9_mini": 10,
+    "9_bus": 10,
+    "10_tempo": 10,
+    "10_mini": 10,
+    "10_bus": 10,
+    "13_tempo": 12,
+    "13_mini": 12,
+    "13_bus": 12,
+    "11_tempo": 15,
+    "11_mini": 15,
+    "11_bus": 15
+  },
+  "8_tempo": {
+    "6_tempo": 5,
+    "6_mini": 5,
+    "6_bus": 5,
+    "9_tempo": 5,
+    "9_mini": 5,
+    "9_bus": 5,
+    "10_tempo": 5,
+    "10_mini": 5,
+    "10_bus": 5,
+    "13_tempo": 10,
+    "13_mini": 10,
+    "13_bus": 10,
+    "11_tempo": 12,
+    "11_mini": 12,
+    "11_bus": 12
+  },
+  "9_mini": {
+    "28_tempo": 8,
+    "28_mini": 8,
+    "28_bus": 8,
+    "8_tempo": 8,
+    "8_mini": 8,
+    "8_bus": 8,
+    "10_tempo": 8,
+    "10_mini": 8,
+    "10_bus": 8,
+    "13_tempo": 10,
+    "13_mini": 10,
+    "13_bus": 10,
+    "11_tempo": 10,
+    "11_mini": 10,
+    "11_bus": 10
+  },
+  "9_bus": {
+    "28_tempo": 10,
+    "28_mini": 10,
+    "28_bus": 10,
+    "8_tempo": 10,
+    "8_mini": 10,
+    "8_bus": 10,
+    "10_tempo": 10,
+    "10_mini": 10,
+    "10_bus": 10,
+    "13_tempo": 12,
+    "13_mini": 12,
+    "13_bus": 12,
+    "11_tempo": 12,
+    "11_mini": 12,
+    "11_bus": 12
+  },
+  "9_tempo": {
+    "28_tempo": 5,
+    "28_mini": 5,
+    "28_bus": 5,
+    "8_tempo": 5,
+    "8_mini": 5,
+    "8_bus": 5,
+    "10_tempo": 5,
+    "10_mini": 5,
+    "10_bus": 5,
+    "13_tempo": 10,
+    "13_mini": 10,
+    "13_bus": 10,
+    "11_tempo": 10,
+    "11_mini": 10,
+    "11_bus": 10
+  },
+  "6_mini": {
+    "7_tempo": 8,
+    "7_mini": 8,
+    "7_bus": 8,
+    "5_tempo": 8,
+    "5_mini": 8,
+    "5_bus": 8,
+    "8_tempo": 8,
+    "8_mini": 8,
+    "8_bus": 8
+  },
+  "6_bus": {
+    "7_tempo": 10,
+    "7_mini": 10,
+    "7_bus": 10,
+    "5_tempo": 10,
+    "5_mini": 10,
+    "5_bus": 10,
+    "8_tempo": 10,
+    "8_mini": 10,
+    "8_bus": 10
+  },
+  "6_tempo": {
+    "7_tempo": 5,
+    "7_mini": 5,
+    "7_bus": 5,
+    "5_tempo": 5,
+    "5_mini": 5,
+    "5_bus": 5,
+    "8_tempo": 5,
+    "8_mini": 5,
+    "8_bus": 5
+  },
+  "7_mini": {
+    "6_tempo": 8,
+    "6_mini": 8,
+    "6_bus": 8,
+    "5_tempo": 10,
+    "5_mini": 10,
+    "5_bus": 10
+  },
+  "7_bus": {
+    "6_tempo": 10,
+    "6_mini": 10,
+    "6_bus": 10,
+    "5_tempo": 12,
+    "5_mini": 12,
+    "5_bus": 12
+  },
+  "7_tempo": {
+    "6_tempo": 5,
+    "6_mini": 5,
+    "6_bus": 5,
+    "5_tempo": 8,
+    "5_mini": 8,
+    "5_bus": 8
+  },
+  "1_mini": {
+    "17_tempo": 12,
+    "17_mini": 12,
+    "17_bus": 12,
+    "0_tempo": 8,
+    "0_mini": 8,
+    "0_bus": 8,
+    "3_tempo": 5,
+    "3_mini": 5,
+    "3_bus": 5,
+    "2_tempo": 12,
+    "2_mini": 12,
+    "2_bus": 12
+  },
+  "1_bus": {
+    "17_tempo": 15,
+    "17_mini": 15,
+    "17_bus": 15,
+    "0_tempo": 10,
+    "0_mini": 10,
+    "0_bus": 10,
+    "3_tempo": 10,
+    "3_mini": 10,
+    "3_bus": 10,
+    "2_tempo": 10,
+    "2_mini": 10,
+    "2_bus": 10
+  },
+  "1_tempo": {
+    "17_tempo": 15,
+    "17_mini": 15,
+    "17_bus": 15,
+    "0_tempo": 8,
+    "0_mini": 8,
+    "0_bus": 8,
+    "3_tempo": 8,
+    "3_mini": 8,
+    "3_bus": 8,
+    "2_tempo": 15,
+    "2_mini": 15,
+    "2_bus": 15
+  },
+  "3_mini": {
+    "1_tempo": 8,
+    "1_mini": 8,
+    "1_bus": 8,
+    "4_tempo": 5,
+    "4_mini": 5,
+    "4_bus": 5
+  },
+  "3_bus": {
+    "1_tempo": 10,
+    "1_mini": 10,
+    "1_bus": 10,
+    "4_tempo": 10,
+    "4_mini": 10,
+    "4_bus": 10
+  },
+  "3_tempo": {
+    "1_tempo": 5,
+    "1_mini": 5,
+    "1_bus": 5,
+    "4_tempo": 5,
+    "4_mini": 5,
+    "4_bus": 5
+  },
+  "4_mini": {
+    "11_tempo": 8,
+    "11_mini": 8,
+    "11_bus": 8,
+    "3_tempo": 5,
+    "3_mini": 5,
+    "3_bus": 5,
+    "5_tempo": 5,
+    "5_mini": 5,
+    "5_bus": 5
+  },
+  "4_bus": {
+    "11_tempo": 10,
+    "11_mini": 10,
+    "11_bus": 10,
+    "3_tempo": 5,
+    "3_mini": 5,
+    "3_bus": 5,
+    "5_tempo": 5,
+    "5_mini": 5,
+    "5_bus": 5
+  },
+  "4_tempo": {
+    "11_tempo": 15,
+    "11_mini": 15,
+    "11_bus": 15,
+    "3_tempo": 5,
+    "3_mini": 5,
+    "3_bus": 5,
+    "5_tempo": 5,
+    "5_mini": 5,
+    "5_bus": 5
+  },
+  "0_mini": {
+    "17_tempo": 20,
+    "17_mini": 20,
+    "17_bus": 20,
+    "00_tempo": 8,
+    "00_mini": 8,
+    "00_bus": 8,
+    "1_tempo": 8,
+    "1_mini": 8,
+    "1_bus": 8,
+    "2_tempo": 15,
+    "2_mini": 15,
+    "2_bus": 15
+  },
+  "0_bus": {
+    "17_tempo": 15,
+    "17_mini": 15,
+    "17_bus": 15,
+    "00_tempo": 10,
+    "00_mini": 10,
+    "00_bus": 10,
+    "1_tempo": 10,
+    "1_mini": 10,
+    "1_bus": 10,
+    "2_tempo": 15,
+    "2_mini": 15,
+    "2_bus": 15
+  },
+  "0_tempo": {
+    "17_tempo": 25,
+    "17_mini": 25,
+    "17_bus": 25,
+    "00_tempo": 5,
+    "00_mini": 5,
+    "00_bus": 5,
+    "1_tempo": 5,
+    "1_mini": 5,
+    "1_bus": 5,
+    "2_tempo": 20,
+    "2_mini": 20,
+    "2_bus": 20
+  },
+  "2_mini": {
+    "17_tempo": 15,
+    "17_mini": 15,
+    "17_bus": 15,
+    "1_tempo": 12,
+    "1_mini": 12,
+    "1_bus": 12,
+    "0_tempo": 12,
+    "0_mini": 12,
+    "0_bus": 12
+  },
+  "2_bus": {
+    "17_tempo": 15,
+    "17_mini": 15,
+    "17_bus": 15,
+    "1_tempo": 10,
+    "1_mini": 10,
+    "1_bus": 10,
+    "0_tempo": 10,
+    "0_mini": 10,
+    "0_bus": 10
+  },
+  "2_tempo": {
+    "17_tempo": 20,
+    "17_mini": 20,
+    "17_bus": 20,
+    "1_tempo": 15,
+    "1_mini": 15,
+    "1_bus": 15,
+    "0_tempo": 15,
+    "0_mini": 15,
+    "0_bus": 15
+  }
 }

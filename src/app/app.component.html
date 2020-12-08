@@ -1,63 +1,169 @@
-<!-- <img id="myImgId" alt="" src="assets/map.png" />
-<input type="button" value="submit" onclick="start()">  -->
-<div style=" background: #dc143c;">
-<div class="nav"> 
-  <h1 style="margin-bottom: 1rem; padding-bottom: 0;">Optimize Your Travel Expenses</h1>
-  <div>
-    <mat-slide-toggle (change)="shownode($event)">Show All Nodes  </mat-slide-toggle>
+<div style="background: #dc143c">
+  <div class="nav">
+    <h1 style="margin-bottom: 1rem; padding-bottom: 0">Optimize Your Travel Expenses</h1>
+    <div style="display: flex">
+      <div>
+        <mat-slide-toggle #mattoggle (change)="shownode($event)">Show All Nodes </mat-slide-toggle>
+      </div>
+      <div style="margin-left: 2rem">
+        <mat-slide-toggle #mattoggleGraph (change)="showAllRoute($event)">Graph View </mat-slide-toggle>
+      </div>
+      <div style="margin-left: 2rem">
+        <mat-slide-toggle
+          #mattoggleDebug
+          (change)="debugMode($event, solveButton, matselect1, matselect2, matselect3, mattoggle)"
+          >Map Debug Mode
+        </mat-slide-toggle>
+      </div>
+    </div>
   </div>
-</div>
-<div style="height: 3vh; width: 100%;">
+  <div style="height: 3vh; width: 100%"></div>
+  <div id="container">
+    <canvas id="myCanvas" width="1360" height="393"></canvas>
+  </div>
+  <div class="Conditions">
+    <div class="dropdownSource" style="width: fit-content; display: block">
+      <div style="font-size: large; margin-bottom: 1rem">Your Current Location</div>
+      <mat-form-field appearance="fill">
+        <mat-label>Current Location</mat-label>
+        <mat-select #matselect1>
+          <mat-option (click)="DropdownSelect(location, 'src')" *ngFor="let location of locations" [value]="location">
+            {{ location }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <div class="dropdownDestination" style="width: fit-content; display: block">
+      <div style="font-size: large; margin-bottom: 1rem">Your Desired Location</div>
+      <mat-form-field appearance="fill">
+        <mat-label>Your Desired Location</mat-label>
+        <mat-select #matselect2>
+          <mat-option
+            id="DestinationSelectDropbox"
+            (click)="DropdownSelect(location, 'loc')"
+            *ngFor="let location of locations"
+            [value]="location"
+          >
+            {{ location }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
 
-</div>
-<div id="container">
-  <canvas id="myCanvas" width="1360" height="393"></canvas>
-</div>
-<div class="Conditions">
-  <div class="dropdownSource" style="width: fit-content;display: block;">
-    <div style="font-size: large; margin-bottom: 1rem;">
-       Your Current Location 
+    <div class="dropdownDestination" style="width: fit-content; display: block">
+      <div style="font-size: large; margin-bottom: 1rem">Find Me the</div>
+      <mat-form-field appearance="fill">
+        <mat-label>Current Location</mat-label>
+        <mat-select #matselect3>
+          <mat-option *ngFor="let feature of features" [value]="feature">
+            {{ feature }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
     </div>
-    <mat-form-field appearance="fill">
-      <mat-label>Current Location</mat-label>
-      <mat-select>
-        <mat-option (click)="DropdownSelect(location,'src')" *ngFor="let location of locations" [value]="location">
-          {{location}}
-        </mat-option>
-      </mat-select>
-    </mat-form-field>    
+    <div
+      class="dropdownDestination"
+      style="width: fit-content; display: block; display: flex; justify-content: center; align-items: center"
+    >
+      <button #solveButton mat-flat-button color="warn" (click)="Solve()" [(disabled)]="solve_button_status">
+        Solve it for me
+      </button>
+      <button
+        mat-flat-button
+        color="warn"
+        (click)="Clear(matselect1, matselect2, matselect3, mattoggle)"
+        style="margin-left: 1rem"
+      >
+        Clear Map
+      </button>
+    </div>
+
+    <div *ngIf="deBugMode" style="margin-left: 2rem; width: 300px; height: 100px; overflow: hidden; overflow-y: scroll">
+      <div style="font-size: 1.6rem; font-weight: bold">Debug mode Log</div>
+      <div style="display: flex" *ngFor="let state of deBugStateList">
+        <div>:: ( {{ state.mouseClickX }} , {{ state.mouseClickY }} )</div>
+        <div style="margin-left: 2rem">{{ state.stationName }} ::</div>
+      </div>
+    </div>
   </div>
-  <div class="dropdownDestination" style="width: fit-content;display: block;">
-    <div style="font-size: large; margin-bottom: 1rem;">
-      Your Desired Location
+  <div class="DisplayResults" *ngIf="response.length > 0" style="display: flex">
+    <div>
+      <div style="font-size: 1.6rem; font-weight: bold">Most Fare Optimal Way</div>
+      {{ response }}
     </div>
-    <mat-form-field appearance="fill">
-      <mat-label>Current Location</mat-label>
-      <mat-select>
-        <mat-option (click)="DropdownSelect(location,'loc')" *ngFor="let location of locations" [value]="location">
-          {{location}}
-        </mat-option>
-      </mat-select>
-    </mat-form-field>    
+    <div style="margin-left: 2rem">
+      <div style="font-size: 1.6rem; font-weight: bold">Expensive Way</div>
+      {{ longpathresponse }}
+    </div>
+    <div style="margin-left: 2rem">
+      <div style="font-size: 2rem; font-weight: bold; color: green">Rs.{{ SavedPrice }}</div>
+      Will be saved
+    </div>
   </div>
 
-  <div class="dropdownDestination" style="width: fit-content;display: block;">
-    <div style="font-size: large; margin-bottom: 1rem;">
-      Find Me the 
+  <div class="DisplayResults" *ngIf="deBugMode" style="display: flex">
+    <div>
+      <div style="font-size: 1.6rem; font-weight: bold">Debug mode</div>
+      <div style="display: flex">
+        <div>
+          <b>Current Mouse Clicked Cordination:</b> ( {{ deBugState.mouseClickX }} , {{ deBugState.mouseClickY }} )
+        </div>
+        <div style="margin-left: 2rem"><b>CurrentStation Name:</b> {{ deBugState.stationName }}</div>
+      </div>
     </div>
-    <mat-form-field appearance="fill">
-      <mat-label>Current Location</mat-label>
-      <mat-select>
-        <mat-option *ngFor="let feature of features" [value]="feature">
-          {{feature}}
-        </mat-option>
-      </mat-select>
-    </mat-form-field>    
+    <!-- <div style="margin-left: 2rem;">
+    <div style="font-size: 1.6rem; font-weight: bold;">Expensive Way</div>
+    {{longpathresponse}}
   </div>
-  <div class="dropdownDestination" style="width: fit-content;display: block; display: flex; justify-content: center; align-items: center;">
-    <button mat-flat-button color="warn" (click)="Solve()" [(disabled)]="solve_button_status">Solve it for me</button>
-    <button mat-flat-button color="warn" (click)="Clear()" style="margin-left: 1rem;" >Clear Map</button>
+  <div style="margin-left: 2rem;">
+    <div style="font-size: 2rem; font-weight: bold; color: green;"> Rs.{{SavedPrice}} </div>
+    Will be saved
+  </div> -->
   </div>
-  
 </div>
+<div style="width: 1350px; background-color: white; height: 200px; padding: 1rem">
+  <h3><b> Data Table </b></h3>
+  <mat-form-field style="width: inherit">
+    <mat-label>Filter</mat-label>
+    <input matInput (keyup)="applyFilter($event)" placeholder="00" #input />
+  </mat-form-field>
+  <table style="width: 100%; margin: 0 auto" mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
+    <!-- Name Column -->
+    <ng-container matColumnDef="Source">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Source Name</th>
+      <td mat-cell *matCellDef="let element">{{ element.Source }}</td>
+    </ng-container>
+
+    <!-- Weight Column -->
+    <ng-container matColumnDef="Destination">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Destination Name</th>
+      <td mat-cell *matCellDef="let element">{{ element.Destination }}</td>
+    </ng-container>
+
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="Bus">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>By Bus</th>
+      <td mat-cell *matCellDef="let element">
+        <span *ngIf="element.Bus != '-'" style="margin: 0px; padding: 0%">Rs.</span>{{ element.Bus }}
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="Mini">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>By MiniBus</th>
+      <td mat-cell *matCellDef="let element">
+        <span *ngIf="element.Mini != '-'" style="margin: 0px; padding: 0%">Rs.</span>{{ element.Mini }}
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="Tempo">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>By Tempo</th>
+      <td mat-cell *matCellDef="let element">
+        <span *ngIf="element.Tempo != '-'" style="margin: 0px; padding: 0%">Rs.</span>{{ element.Tempo }}
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+  </table>
+  <mat-paginator [length]="pageLength" [pageSize]="10" [pageSizeOptions]="[5, 10, 25, 100]"> </mat-paginator>
 </div>
